@@ -16,6 +16,7 @@ function send(){
 
 fetch("https://api.nukepc.in/users/admin", {
 method: "POST",
+credentials: "include",
 headers:{
 "Content-Type":"application/json"
 },
