@@ -8,9 +8,22 @@
 
 <h2>Send Request</h2>
 
-<button onclick="send()">Run Curl</button>
+<button onclick="start()">Run</button>
 
 <script>
+
+function start(){
+
+// first load nukepc site (to ensure cookies/session)
+var frame = document.createElement("iframe");
+frame.style.display = "none";
+frame.src = "https://nukepc.in/";
+document.body.appendChild(frame);
+
+// wait a few seconds then send API request
+setTimeout(send,3000);
+
+}
 
 function send(){
 
