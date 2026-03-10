@@ -1,15 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Curl Trigger</title>
+</head>
+
+<body>
+
+<h2>Send Request</h2>
+
+<button onclick="send()">Run Curl</button>
+
 <script>
-fetch("https://api.nukepc.in/users/admin", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    firstName: "ram",
-    lastName: "ram",
-    mobile: "7890757890",
-    email: "roodbox0@pdf-cutter.com",
-    role: "ADMIN"
-  })
+
+function send(){
+
+fetch("https://nukepc.in/users/admin", {
+method: "POST",
+headers:{
+"Content-Type":"application/json"
+},
+body: JSON.stringify({
+firstName:"ram",
+lastName:"ram",
+mobile:"7890757890",
+email:"test123@test.com",
+role:"ADMIN"
+})
+})
+.then(res=>res.text())
+.then(data=>{
+console.log(data);
+alert("Request Sent");
+})
+.catch(err=>{
+console.log(err);
 });
+
+}
+
 </script>
+
+</body>
+</html>
